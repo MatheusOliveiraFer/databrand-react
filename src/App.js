@@ -2,7 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 
 //Pages
-import Header from "./router/Layout/Header";
+import Header from "./router/Layout/index";
 import NotFound from "./router/NotFound";
 
 const App = () => {
