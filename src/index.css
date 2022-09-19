@@ -29,3 +29,9 @@ video {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.LogoDataBrand10anos {
+  background-image: url('./assets/img/pessoas-processos-tecnologia.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
