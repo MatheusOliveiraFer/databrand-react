@@ -16,7 +16,6 @@ export const Desktop = () => {
                     <div className="w-[60%] flex items-center justify-around">
                         <div className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]">Home</div>
                         <div className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]">Soluções</div>
-                        <div className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]">Mercados</div>
                         <div className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]">Conteúdos</div>
                     </div>
                     <div className="w-[40%] flex items-center justify-end">
