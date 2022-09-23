@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ConsultansDark from "../../assets/gif/8-account-outline-dark.gif";
 import ConsultansWhite from "../../assets/gif/8-account-outline-white.gif";
-
+import { NavLink } from "react-router-dom";
 
 
 export const Desktop = () => {
@@ -14,7 +14,7 @@ export const Desktop = () => {
                 </div>
                 <div className="l:w-[70%] d:w-[60%] flex">
                     <div className="w-[60%] flex items-center justify-around">
-                        <div className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]">Home</div>
+                        <NavLink className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]" to="/">Home</NavLink>
                         <div className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]">Soluções</div>
                         <div className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]">Conteúdos</div>
                     </div>

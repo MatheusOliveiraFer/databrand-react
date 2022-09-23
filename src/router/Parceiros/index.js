@@ -5,6 +5,8 @@ import Enfocus from "../../assets/img/Enfocus.png";
 import UltimateTechnoGraphics from "../../assets/img/UltimateTechnoGraphics.png";
 import Hybrid from "../../assets/img/Hybrid.png";
 import TiliaLabs from "../../assets/img/TiliaLabs.png";
+import databrand from "../../assets/img/databrand.png";
+import { NavLink } from "react-router-dom";
 
 const Index = () => {
     return (
@@ -12,7 +14,7 @@ const Index = () => {
             {/* <!-- Section Hero --> */}
             <div class="bg-gray-100 py-14">
                 <h3 class="text-2xl tracking-widest text-[#134780] text-center">SOLUÇÕES</h3>
-                <h1 class="mt-8 text-center text-5xl text-[#134780] font-bold">Softwares & Serviços.</h1>
+                <h1 class="mt-8 text-center text-5xl text-[#134780] font-bold">Softwares & Serviços</h1>
 
                 {/* <!-- Box 1--> */}
                 <div class="md:flex md:justify-center md:space-x-8 md:px-14">
@@ -22,8 +24,8 @@ const Index = () => {
                             <img class="w-64" src={EFI} alt="Logo EFI" />
                             <div class="mt-4 text-[#134780] text-center">
                                 <h1 class="text-xl font-bold">EFI</h1>
-                                <p class="mt-4 text-gray-600">Todos nós da EFI estamos incansavelmente concentrados em apenas...</p>
-                                <button class="mt-8 mb-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200">MAIS</button>
+                                <p class="mt-4 text-gray-600 mb-10">Todos nós da EFI estamos incansavelmente concentrados em apenas...</p>
+                                <NavLink className="mt-8 mb-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200" to="/Efi">MAIS</NavLink>
                             </div>
                         </div>
                     </div>
@@ -105,10 +107,10 @@ const Index = () => {
                     {/* <!-- box-4 --> */}
                     <div class="mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0">
                         <div class="w-sm">
-                            <img class="w-64" src={Enfocus} alt="Logo Enfocus" />
+                            <img class="w-64" src={databrand} alt="Logo Enfocus" />
                             <div class="mt-4 text-green-600 text-center">
-                                <h1 class="text-xl font-bold text-[#134780]">databrand</h1>
-                                <p class="mt-4 text-gray-600">É uma empresa de software especializada no desenvolvimento...</p>
+                                <h1 class="text-xl font-bold text-[#134780]">Consultoria</h1>
+                                <p class="mt-4 text-gray-600">A databrand atua com consultoria nos principais mercados de impressão...</p>
                                 <button class="mt-8 mb-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200">MAIS</button>
                             </div>
                         </div>

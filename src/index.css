@@ -35,3 +35,9 @@ video {
   background-size:cover;
   background-position: center;
 }
+.bg-efi {
+  background-image: url('./assets/img/bg-efi.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
