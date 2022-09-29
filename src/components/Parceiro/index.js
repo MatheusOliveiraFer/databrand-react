@@ -11,6 +11,10 @@ import efi1_ from "../../assets/img/efi1_.jpeg"
 import efi2_ from "../../assets/img/efi2_.jpeg";
 import efi3_ from "../../assets/img/efi3_.jpeg";
 
+import oportunidade from "../../assets/img/oportunidade.jpeg";
+import produto from "../../assets/img/produto.jpeg";
+import suporte from "../../assets/img/suporte.jpeg";
+
 import Swal from 'sweetalert2';
 
 
@@ -50,19 +54,19 @@ const Index = () => {
             <div className="w-full h-[230px] mt-[80px] bg-efi  z-40"></div>
             <div className="w-full flex justify-center">
                 <div className="mt-[30px]">
-                    <div className="text-[40px] font-light text-[#134780] border-b border-[#13488041]">Who is EFI</div>
+                    <div className="text-[40px] font-light text-[#134780] border-b border-[#13488041]">Quem é EFI</div>
                 </div>
             </div>
             <div className="w-full flex justify-center">
                 <div className="mt-[60px]">
-                    <div className="text-[18px] font-light text-center leading-loose">All at EFI are relentlessly focused on just one thing: the growth and success of your print business. <br />That’s why tens of millions of print professionals worldwide turn to EFI to fuel their success.</div>
+                    <div className="text-[18px] font-light text-center leading-loose">Todos na EFI estão incansavelmente focados em apenas uma coisa: o crescimento e o sucesso do seu negócio de impressão.<br /> É por isso que dezenas de milhões de profissionais de impressão em todo o mundo recorrem à EFI para impulsionar seu sucesso.</div>
                 </div>
             </div>
             <div className="w-full flex justify-center mt-[60px]">
                 <div class="max-w-sm rounded overflow-hidden shadow-[0_35px_50px_-15px_rgba(0,0,0,0.2)] mr-10">
                     <img className="w-full svg svg-elem-1 active" src={circle} alt="Sunset in the mountains" />
                     <div className="w-[100px] h-[100px] relative bottom-[245px] left-[145px]">
-                        <img className="w-full svg svg-elem-1 active" src={product} alt="Sunset in the mountains" />
+                        <img className="w-full svg svg-elem-1 active" src={produto} alt="Sunset in the mountains" />
                     </div>
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Melhores produtos</div>
@@ -80,7 +84,7 @@ const Index = () => {
                 <div class="max-w-sm rounded overflow-hidden shadow-[0_35px_50px_-15px_rgba(0,0,0,0.2)] mr-10">
                     <img className="w-full svg svg-elem-1 active" src={circle} alt="Sunset in the mountains" />
                     <div className="w-[100px] h-[100px] relative bottom-[240px] left-[145px]">
-                        <img className="w-full svg svg-elem-1 active" src={headphones} alt="Sunset in the mountains" />
+                        <img className="w-full svg svg-elem-1 active" src={oportunidade} alt="Sunset in the mountains" />
                     </div>
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2"> Melhores oportunidades</div>
@@ -97,8 +101,8 @@ const Index = () => {
 
                 <div class="max-w-sm rounded overflow-hidden shadow-[0_35px_50px_-15px_rgba(0,0,0,0.2)]">
                     <img className="w-full svg svg-elem-1 active" src={circle} alt="Sunset in the mountains" />
-                    <div className="w-[100px] h-[100px] relative bottom-[240px] left-[145px]">
-                        <img className="w-full svg svg-elem-1 active" src={headphones} alt="Sunset in the mountains" />
+                    <div className="w-[100px] h-[100px] relative bottom-[240px] left-[145px] bg-black">
+                        <img className="w-full svg svg-elem-1 active" src={suporte} alt="Sunset in the mountains" />
                     </div>
                     <div class="px-6 py-4">
                         <div class="font-bold text-xl mb-2">Melhor suporte</div>
@@ -115,19 +119,19 @@ const Index = () => {
             </div>
             <div className="w-full flex mt-5">
                 <div className="w-[55%] py-[10%]">
-                    <div className="text-[45px] pl-[93px] text-[#393C3E]">The <b className="font-medium">Premier Partner Program</b></div>
+                    <div className="text-[45px] pl-[93px] text-[#393C3E]">O <b className="font-medium">Programa de Parceiros Premier</b></div>
                     <div>
-                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">All EFI Fiery Display Graphics resellers in Latin America are required to have at least one person certified to act as Technical Sales Support and also to perform installations and training of new customers. Resellers must also provide first level support.</div>
-                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">EFI and Coralis believe in the basic foundation that moves every business: Knowledge.</div>
-                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">The focus is to create a mass of manpower capable of using all the software functionalities.</div>
-                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">EFI Fiery XF Software has more than 70,000 installations worldwide. Coralis is responsible, as Master Distributor for LATAM, for creating the color culture, production automation and resource savings using EFI Fiery Display Graphics technologies.</div>
+                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">Todos os revendedores EFI Fiery Display Graphics na América Latina precisam ter pelo menos uma pessoa certificada para atuar como Suporte Técnico de Vendas e também para realizar instalações e treinamento de novos clientes. Os revendedores também devem fornecer suporte de primeiro nível.</div>
+                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">A EFI e a databrand acreditam na base básica que move todos os negócios: o conhecimento.</div>
+                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">O foco é criar uma massa de mão de obra capaz de utilizar todas as funcionalidades do software.</div>
+                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">O software EFI Fiery XF possui mais de 70.000 instalações em todo o mundo. A databrand é responsável, como parceiro premier para LATAM, pela criação da cultura de cores, automação da produção e economia de recursos usando as tecnologias EFI Fiery Display Graphics.</div>
                     </div>
                 </div>
                 <div className="w-[45%] flex justify-center items-center">
                     <div className="w-[80%]"><img alt="Efi" src={efi} /></div>
                 </div>
             </div>
-            <div className="w-full py-[5%]">
+            <div className="w-full">
                 <div className="w-full flex justify-center text-[40px] font-light text-[#134780]">EFI <b className="font-semibold">Fiery Solutions</b></div>
                 <div class="md:flex md:justify-center md:space-x-8 md:px-14">
                     
