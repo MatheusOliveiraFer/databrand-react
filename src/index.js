@@ -8,7 +8,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './feature/store';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.hydrateRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <BrowserRouter>

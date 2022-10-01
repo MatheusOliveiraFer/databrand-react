@@ -13,8 +13,8 @@ const Index = () => {
         <>
             {/* <!-- Section Hero --> */}
             <div class="bg-gray-100 py-14">
-                <h3 class="text-2xl tracking-widest text-[#134780] text-center">SOLUÇÕES</h3>
-                <h1 class="mt-8 text-center text-5xl text-[#134780] font-bold">Softwares & Serviços</h1>
+                {/* <h3 class="text-2xl tracking-widest text-[#134780] text-center">SOLUÇÕES</h3> */}
+                <h1 class="mt-8 text-center text-5xl text-[#134780] font-bold">SOLUÇÕES & SERVIÇOS</h1>
 
                 {/* <!-- Box 1--> */}
                 <div class="md:flex md:justify-center md:space-x-8 md:px-14">
@@ -116,7 +116,7 @@ const Index = () => {
                         </div>
                     </div>
                 </div>
-                <h4 class="text-center font-semibold text-xl mt-14 text-[#134780]">10 anos de muita <b>PARCEIRA</b> & <b>APRENDIZADO</b></h4>
+                <h4 class="text-center font-semibold text-xl mt-14 text-[#134780]">10 anos dedicados a <b className="font-bold">PESSOAS |  PROCESSOS | TECNOLOGIA</b></h4>
             </div>
 
             {/* <!-- Footer --> */}

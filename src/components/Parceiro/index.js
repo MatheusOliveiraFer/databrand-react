@@ -1,7 +1,5 @@
 import circle from "../../assets/gif/circle.gif";
-import headphones from "../../assets/img/headphones.png";
 import efi from "../../assets/img/efi-partner-premiercoralis.jpg";
-import product from "../../assets/img/product.png";
 
 import efi1 from "../../assets/img/efi1.png";
 import efi2 from "../../assets/img/efi2.png";
