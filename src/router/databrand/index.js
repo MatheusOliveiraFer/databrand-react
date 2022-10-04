@@ -10,9 +10,9 @@ const index = () => {
             <Desktop />
             <div className="w-full">
                 <img alt="Plano de fundo" src={header} className="w-full" />
-                <div className="absolute top-[20%] left-[10%] w-[50%] h-[30%]">
-                    <div className="font-semibold text-[50px] text-white">A databrand</div>
-                    <div className="font-light text-[15px] text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'</div>
+                <div className="absolute top-[20%] left-[10%] w-[70%] h-[30%]">
+                    <div className="font-light text-[50px] text-white">A databrand</div>
+                    <div className="font-light text-[15px] text-white w-full">A databrand é uma empresa especializada em gerenciamento de cores e automação de processos. Fundada em 2013, foi criada com o intuito de apresentar soluções em automação de processos para a indústria gráfica. Atualmente nosso portfólio de soluções e serviços, permite elevar o nível de automação na indústria para além da gráfica.</div>
                 </div>
             </div>
             <div className="w-full  h-[400px] flex justify-center mt-[-90px]">
