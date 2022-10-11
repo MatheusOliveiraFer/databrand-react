@@ -7,6 +7,7 @@ import Hybrid from "../../assets/img/Hybrid.png";
 import TiliaLabs from "../../assets/img/TiliaLabs.png";
 import databrand from "../../assets/img/databrand.png";
 import { NavLink } from "react-router-dom";
+import Email from "../../components/Contact/contactEmail";
 
 const Index = () => {
     return (
@@ -118,7 +119,7 @@ const Index = () => {
                 </div>
                 <h4 class="text-center font-semibold text-xl mt-14 text-[#134780]">10 anos dedicados a <b className="font-bold">PESSOAS |  PROCESSOS | TECNOLOGIA</b></h4>
             </div>
-
+            <Email />
             {/* <!-- Footer --> */}
             <footer class="text-center py-16 bg-gradient-to-r from-[#134780] text-sm">
                 <p class="text-white">

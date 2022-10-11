@@ -5,6 +5,7 @@ import { Desktop } from "../Menu";
 import Video from "../Video";
 import Parceiros from "../Parceiros";
 import Whatsapp from "../../components/wpp/index";
+import Email from "../../components/Contact/contactEmail";
 
 const Index = () => {
     return (
