@@ -120,14 +120,6 @@ const Index = () => {
                 <h4 class="text-center font-semibold text-xl mt-14 text-[#134780]">10 anos dedicados a <b className="font-bold">PESSOAS |  PROCESSOS | TECNOLOGIA</b></h4>
             </div>
             <Email />
-            {/* <!-- Footer --> */}
-            <footer class="text-center py-16 bg-gradient-to-r from-[#134780] text-sm">
-                <p class="text-white">
-                    Para qualquer dúvida ou contato conosco, clique no símbolo do Whatsapp ou<br />
-                    envie e-mail para <span className="underline">contato@databrand.com.br</span>
-                </p>
-                <p class="mt-20 text-white"><span class="underline text-green-200 cursor-pointer">© databrand</span> todos os direitos reservados.</p>
-            </footer>
         </>
     );
 }

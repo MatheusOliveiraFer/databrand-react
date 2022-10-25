@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 const Email = () => {
     const [name, setName] = useState('');
@@ -9,7 +10,10 @@ const Email = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         if(name === '' || email === '' || message === '') {
-            alert("Preencha os campos!");
+            Swal.fire({
+                icon: 'info',
+                title: 'Ainda tem campos a serem preenchidos!'
+            })
             return;
         }
         const templateParams = {
@@ -22,11 +26,15 @@ const Email = () => {
         console.log(email);
         console.log(message);
 
-        emailjs.send('service_4z7o1rm', 'template_jdjgmci', templateParams, 'SFP1SwoMtS0209iJ5')
+        emailjs.send('service_6u1da5p', 'template_8qa6io8', templateParams, 'Nt9m_P5EozDsFLcmR')
             .then((result) => {
                 setEmail('');
                 setName('');
                 setMessage('');
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Sua mensagem foi enviada, agradecemos o seu contato!'
+                })
             }, (error) => {
                 console.log(error.text);
             });
@@ -37,9 +45,8 @@ const Email = () => {
                 <div class="container px-6 py-12 mx-auto">
                     <div class="lg:flex lg:items-center lg:-mx-6">
                         <div class="lg:w-1/2 lg:mx-6">
-                            <h1 class="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-5xl">
-                            Entre em contato para <br />
-                            mais informações
+                            <h1 class="text-[15px] font-normal text-gray-800  dark:text-white lg:text-[30px]">
+                                <b className="font-bold">Entre em contato conosco</b> para obter mais informações sobre qualquer um de nossos produtos ou serviços.
                             </h1>
 
                             <div class="mt-6 space-y-8 md:mt-8">
@@ -49,8 +56,8 @@ const Email = () => {
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
 
-                                    <a class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400" href='https://www.google.com/maps/place/Databrand/@-19.8918638,-43.9671655,15z/data=!4m5!3m4!1s0x0:0x3f37fdf119b123c0!8m2!3d-19.8918638!4d-43.9671655'>
-                                        Torre Serra do Cipó, Complexo - Av. Del Rey, 111 - 106 3 - Caiçaras, Belo Horizonte - MG, 30775-240
+                                    <a class="mx-2 text-gray-700 truncate w-80 dark:text-gray-400" href='https://www.google.com/maps/place/R.+Graco,+82+-+Gl%C3%B3ria,+Belo+Horizonte+-+MG,+30880-060/@-19.8990188,-44.0088855,17z/data=!3m1!4b1!4m5!3m4!1s0xa696ba914b460b:0xbcff9414dd660b40!8m2!3d-19.8990188!4d-44.0088855' target="_blank" rel="noreferrer">
+                                        Rua  Gracco, 82 - Belo Horizonte - MG, 30880-060
                                     </a>
                                 </p>
 
