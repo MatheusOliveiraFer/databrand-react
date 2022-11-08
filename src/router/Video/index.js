@@ -1,9 +1,8 @@
-import video from "../../assets/video/databrand.mp4";
 
 const Index = () => {
     return (
         <div className="w-full h-screen">
-            <video src={video} autoPlay={true} muted={true} loop={true} />
+            <video src="https://res.cloudinary.com/dmkqw4yoc/video/upload/v1667351608/databrand_t8klyu.mp4" autoPlay loop muted />
         </div>
     );
 }

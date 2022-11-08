@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { Desktop } from "../Menu";
+import { Desktop, Mobile } from "../Menu";
 import Video from "../Video";
 import Parceiros from "../Parceiros";
 import Whatsapp from "../../components/wpp/index";
@@ -10,6 +10,7 @@ const Index = () => {
     return (
         <div>
             <Desktop />
+            <Mobile />
             <Video />
             <Whatsapp />
             <Parceiros />
