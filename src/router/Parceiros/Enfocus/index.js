@@ -1,14 +1,13 @@
 import { Desktop } from "../../../router/Menu";
-import Parceiro from "../../../components/Parceiro";
+import ParceiroEnfocus from "../../../components/Parceiro/Enfocus";
 import { useNavigate } from "react-router-dom";
 
 const Index = () => {
     const navigate = useNavigate();
     navigate(0);
     const informationOFPage = {
-        "title" : "Quem é EFI",
-        "description" : "Todos na EFI estão incansavelmente focados em apenas uma coisa: o crescimento e o sucesso do seu negócio de impressão.",
-        "description2" : "É por isso que dezenas de milhões de profissionais de impressão em todo o mundo recorrem à EFI para impulsionar seu sucesso.",
+        "title" : "Quem é Enfocus",
+        "description" : "Fundada em 1993 e sediada em Gent, na Bélgica, a Enfocus é um fornecedor global de softwares de validação de PDF e automação de processos, incluindo PitStop, Switch, BoardingPass e Connect. Desde o início, a crença fundamental da Enfocus tem sido que a tecnologia deve seguir o processo e não o contrário. Ao desenvolver soluções que se originam dessa filosofia, a Enfocus permite que seus clientes integrem seus ecossistemas de tecnologia para aumentar a eficiência, precisão e consistência, melhorando o desempenho e a lucratividade. A equipe Enfocus faz parceria com OEMs de software, fornecedores e integradores para conectar sistemas distintos em pré-impressão, impressão e acabamento, bem como gerenciar a qualidade. A Enfocus é uma unidade de negócios da Esko, uma empresa Danaher, e tem instalações de R&D e fabricação na Europa, EUA, China e Índia.",
         card1: {
             "title": "Melhores Produtos",
             "description": "A EFI está liderando a transformação mundial de imagens analógicas para digitais. Alimentar essa transformação é nosso compromisso de reinvestir 16% de nossa receita em pesquisa e desenvolvimento todos os anos. Não vemos isso apenas como um investimento em nossa empresa. É um investimento no seu também.",
@@ -43,10 +42,9 @@ const Index = () => {
                 "contents":"Programa de Parceiros Premier"
             },
             contents: {
-                "paragraph1": "Todos os revendedores EFI Fiery Display Graphics na América Latina precisam ter pelo menos uma pessoa certificada para atuar como Suporte Técnico de Vendas e também para realizar instalações e treinamento de novos clientes. Os revendedores também devem fornecer suporte de primeiro nível.",
-                "paragraph2": "A EFI e a databrand acreditam na base básica que move todos os negócios: o conhecimento.",
-                "paragraph3": "O foco é criar uma massa de mão de obra capaz de utilizar todas as funcionalidades do software.",
-                "paragraph4":"O software EFI Fiery XF possui mais de 70.000 instalações em todo o mundo. A databrand é responsável, como parceiro premier para LATAM, pela criação da cultura de cores, automação da produção e economia de recursos usando as tecnologias EFI Fiery Display Graphics."
+                "paragraph1": "Fundada em 1993 e sediada em Gent, na Bélgica, a Enfocus é um fornecedor global de softwares de validação de PDF e automação de processos, incluindo PitStop, Switch, BoardingPass e Connect.",
+                "paragraph2": "Desde o início, a crença fundamental da Enfocus tem sido que a tecnologia deve seguir o processo e não o contrário. Ao desenvolver soluções que se originam dessa filosofia, a Enfocus permite que seus clientes integrem seus ecossistemas de tecnologia para aumentar a eficiência, precisão e consistência, melhorando o desempenho e a lucratividade.",
+                "paragraph3": "A equipe Enfocus faz parceria com OEMs de software, fornecedores e integradores para conectar sistemas distintos em pré-impressão, impressão e acabamento, bem como gerenciar a qualidade. A Enfocus é uma unidade de negócios da Esko, uma empresa Danaher, e tem instalações de R&D e fabricação na Europa, EUA, China e Índia."
             }
         },
         //EFIFiery Solutions
@@ -75,7 +73,7 @@ const Index = () => {
     return (
         <>
             <Desktop  />
-            <Parceiro item={informationOFPage} />      
+            <ParceiroEnfocus item={informationOFPage} />      
             {/* <!-- Footer --> */}
             <footer class="text-center py-16 bg-gradient-to-r from-[#134780] text-sm mt-10">
                 <p class="text-white">

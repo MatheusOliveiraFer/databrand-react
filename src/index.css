@@ -41,3 +41,9 @@ video {
   background-size: cover;
   background-position: center;
 }
+.bg-enfocus {
+  background-image: url('./assets/img/EnfocusBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

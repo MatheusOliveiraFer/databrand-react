@@ -61,8 +61,8 @@ const Index = () => {
                             <img class="w-64" src={Enfocus} alt="Logo Enfocus" />
                             <div class="mt-4 text-green-600 text-center">
                                 <h1 class="text-xl font-bold text-[#134780]">Enfocus</h1>
-                                <p class="mt-4 text-gray-600">É uma empresa de software especializada no desenvolvimento...</p>
-                                <button class="mt-8 mb-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200">MAIS</button>
+                                <p class="mt-4 text-gray-600 mb-10">É uma empresa de software especializada no desenvolvimento...</p>
+                                <NavLink className="mt-8 mb-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200" to="/Enfocus">MAIS</NavLink>
                             </div>
                         </div>
                     </div>

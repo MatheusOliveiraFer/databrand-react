@@ -16,7 +16,7 @@ import suporte from "../../assets/img/suporte.jpeg";
 import Swal from 'sweetalert2';
 
 
-const Index = () => {
+const Index = ({item}) => {
     const Card1 = () => {
         Swal.fire({
             title: 'Fiery XF',
@@ -52,12 +52,12 @@ const Index = () => {
             <div className="w-full h-[230px] mt-[80px] bg-efi  z-40"></div>
             <div className="w-full flex justify-center">
                 <div className="mt-[30px]">
-                    <div className="text-[40px] font-light text-[#134780] border-b border-[#13488041]">Quem é EFI</div>
+                    <div className="text-[40px] font-light text-[#134780] border-b border-[#13488041]">{item.title}</div>
                 </div>
             </div>
             <div className="w-full flex justify-center">
                 <div className="mt-[60px]">
-                    <div className="text-[18px] font-light text-center leading-loose">Todos na EFI estão incansavelmente focados em apenas uma coisa: o crescimento e o sucesso do seu negócio de impressão.<br /> É por isso que dezenas de milhões de profissionais de impressão em todo o mundo recorrem à EFI para impulsionar seu sucesso.</div>
+                    <div className="text-[18px] font-light text-center leading-loose">{item.description}<br/>{item.description2}</div>
                 </div>
             </div>
             <div className="w-full flex justify-center mt-[60px]">
@@ -67,15 +67,13 @@ const Index = () => {
                         <img className="w-full svg svg-elem-1 active" src={produto} alt="Sunset in the mountains" />
                     </div>
                     <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">Melhores produtos</div>
-                        <p class="text-gray-700 text-base">
-                        A EFI está liderando a transformação mundial de imagens analógicas para digitais. Alimentar essa transformação é nosso compromisso de reinvestir 16% de nossa receita em pesquisa e desenvolvimento todos os anos. Não vemos isso apenas como um investimento em nossa empresa. É um investimento no seu também.
-                        </p>
+                        <div class="font-bold text-xl mb-2">{item.card1.title}</div>
+                        <p class="text-gray-700 text-base">{item.card1.description}</p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#transformação</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#mundial</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#EFI</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{item.card1.hashtag.hashtag1}</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{item.card1.hashtag.hashtag2}</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{item.card1.hashtag.hashtag3}</span>
                     </div>
                 </div>
 
@@ -85,15 +83,13 @@ const Index = () => {
                         <img className="w-full svg svg-elem-1 active" src={oportunidade} alt="Sunset in the mountains" />
                     </div>
                     <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2"> Melhores oportunidades</div>
-                        <p class="text-gray-700 text-base">
-                        Do Fiery ao jato de tinta superwide, do menor custo por etiqueta aos processos de negócios mais automatizados, a EFI desenvolve produtos para oferecer suporte a um fluxo de trabalho completo de ponta a ponta para clientes em todo o mundo – dando aos parceiros uma vantagem competitiva distinta para o sucesso.
-                        </p>
+                        <div class="font-bold text-xl mb-2">{item.card2.title}</div>
+                        <p class="text-gray-700 text-base">{item.card2.description}</p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#automatizados</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#tinta</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#EFI</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{item.card2.hashtag.hashtag1}</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{item.card2.hashtag.hashtag2}</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{item.card2.hashtag.hashtag3}</span>
                     </div>
                 </div>
 
@@ -103,26 +99,24 @@ const Index = () => {
                         <img className="w-full svg svg-elem-1 active" src={suporte} alt="Sunset in the mountains" />
                     </div>
                     <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">Melhor suporte</div>
-                        <p class="text-gray-700 text-base mb-12">
-                            Nossos mais de 3.000 membros de equipe em todo o mundo comprovam nosso compromisso com você todos os dias desenvolvendo tecnologias inovadoras que, por sua vez, podem ajudar a acelerar suas vendas de soluções EFI agora e no futuro.
-                        </p>
+                        <div class="font-bold text-xl mb-2">{item.card3.title}</div>
+                        <p class="text-gray-700 text-base mb-12">{item.card3.description}</p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#compromisso</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#equipe</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#EFI</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{item.card3.hashtag.hashtag1}</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{item.card3.hashtag.hashtag2}</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{item.card3.hashtag.hashtag3}</span>
                     </div>
                 </div>
             </div>
             <div className="w-full flex mt-5">
                 <div className="w-[55%] py-[10%]">
-                    <div className="text-[45px] pl-[93px] text-[#393C3E]">O <b className="font-medium">Programa de Parceiros Premier</b></div>
+                    <div className="text-[45px] pl-[93px] text-[#393C3E]">{item.programaParceiros.title.paragraph} <b className="font-medium">{item.programaParceiros.title.contents}</b></div>
                     <div>
-                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">Todos os revendedores EFI Fiery Display Graphics na América Latina precisam ter pelo menos uma pessoa certificada para atuar como Suporte Técnico de Vendas e também para realizar instalações e treinamento de novos clientes. Os revendedores também devem fornecer suporte de primeiro nível.</div>
-                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">A EFI e a databrand acreditam na base básica que move todos os negócios: o conhecimento.</div>
-                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">O foco é criar uma massa de mão de obra capaz de utilizar todas as funcionalidades do software.</div>
-                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">O software EFI Fiery XF possui mais de 70.000 instalações em todo o mundo. A databrand é responsável, como parceiro premier para LATAM, pela criação da cultura de cores, automação da produção e economia de recursos usando as tecnologias EFI Fiery Display Graphics.</div>
+                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">{item.programaParceiros.contents.paragraph1}</div>
+                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">{item.programaParceiros.contents.paragraph2}</div>
+                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">{item.programaParceiros.contents.paragraph3}</div>
+                        <div className="text-[18px] font-light pl-[93px] pr-[70px] mt-6 leading-[35px]">{item.programaParceiros.contents.paragraph4}</div>
                     </div>
                 </div>
                 <div className="w-[45%] flex justify-center items-center">
@@ -130,7 +124,7 @@ const Index = () => {
                 </div>
             </div>
             <div className="w-full">
-                <div className="w-full flex justify-center text-[40px] font-light text-[#134780]">EFI <b className="font-semibold">Fiery Solutions</b></div>
+                <div className="w-full flex justify-center text-[40px] font-light text-[#134780]">{item.efiFierySolutions.title.paragraph} <b className="font-semibold">{item.efiFierySolutions.title.contents}</b></div>
                 <div class="md:flex md:justify-center md:space-x-8 md:px-14">
                     
                     {/* <!-- box-1 --> */}
@@ -138,8 +132,8 @@ const Index = () => {
                         <div class="w-sm">
                             <img class="w-64" src={efi1} alt="Logo EFI" />
                             <div class="mt-4 text-[#134780] text-center">
-                                <h1 class="text-xl font-bold">Fiery XF</h1>
-                                <p class="mt-4 text-gray-600">Introduzir o Fiery XF 7 em sua empresa de grande ou super-amplo é a maneira mais fácil...</p>
+                                <h1 class="text-xl font-bold">{item.efiFierySolutions.card1.title}</h1>
+                                <p class="mt-4 text-gray-600">{item.efiFierySolutions.card1.resumeText}</p>
                                 <button className="mt-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200" onClick={Card1}>MAIS</button>
                             </div>
                         </div>
@@ -150,8 +144,8 @@ const Index = () => {
                         <div class="w-sm">
                             <img class="w-64" src={efi2} alt="Logo G7 Expert" />
                             <div class="mt-4 text-green-600 text-center">
-                                <h1 class="text-xl font-bold text-[#134780]">JobFlow</h1>
-                                <p class="mt-4 text-gray-600">O Fiery JobFlow ™ automatiza as etapas de preparação do trabalho em fluxos...</p>
+                                <h1 class="text-xl font-bold text-[#134780]">{item.efiFierySolutions.card2.title}</h1>
+                                <p class="mt-4 text-gray-600">{item.efiFierySolutions.card1.resumeText}</p>
                                 <button class="mt-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200" onClick={Card2}>MAIS</button>
                             </div>
                         </div>
@@ -162,8 +156,8 @@ const Index = () => {
                         <div class="w-sm">
                             <img class="w-64" src={efi3} alt="Logo Creative Egde" />
                             <div class="mt-4 text-green-600 text-center">
-                                <h1 class="text-xl font-bold text-[#134780]">Prep-it</h1>
-                                <p class="mt-4 text-gray-600">O Fiery Prep-it ™ é uma solução de software poderosa e fácil de usar para a preparação...</p>
+                                <h1 class="text-xl font-bold text-[#134780]">{item.efiFierySolutions.card3.title}</h1>
+                                <p class="mt-4 text-gray-600">{item.efiFierySolutions.card3.resumeText}</p>
                                 <button class="mt-4 mb-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200" onClick={Card3}>MAIS</button>
                             </div>
                         </div>

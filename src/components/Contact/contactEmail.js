@@ -41,11 +41,11 @@ const Email = () => {
     };
     return (
         <>
-            <section class="bg-white dark:bg-gray-900">
+            <section class="bg-gray-900">
                 <div class="container px-6 py-12 mx-auto">
                     <div class="lg:flex lg:items-center lg:-mx-6">
                         <div class="lg:w-1/2 lg:mx-6">
-                            <h1 class="text-[15px] font-normal text-gray-800  dark:text-white lg:text-[30px]">
+                            <h1 class="text-[15px] font-normal text-white lg:text-[30px]">
                                 <b className="font-bold">Entre em contato conosco</b> para obter mais informações sobre qualquer um de nossos produtos ou serviços.
                             </h1>
 
@@ -56,17 +56,26 @@ const Email = () => {
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
 
-                                    <a class="mx-2 text-gray-700 truncate w-80 dark:text-gray-400" href='https://www.google.com/maps/place/R.+Graco,+82+-+Gl%C3%B3ria,+Belo+Horizonte+-+MG,+30880-060/@-19.8990188,-44.0088855,17z/data=!3m1!4b1!4m5!3m4!1s0xa696ba914b460b:0xbcff9414dd660b40!8m2!3d-19.8990188!4d-44.0088855' target="_blank" rel="noreferrer">
+                                    <a class="mx-2 text-white truncate w-[700px] dark:text-gray-400" href='https://www.google.com.br/maps/place/Av.+Marqu%C3%AAs+de+S%C3%A3o+Vicente,+230+-+18%C2%B0+andar+-+Barra+Funda,+S%C3%A3o+Paulo+-+SP,+01139-000/@-23.5216385,-46.6643495,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5807b66aab05:0x96223341794bc07a!8m2!3d-23.5216434!4d-46.6621608' target="_blank" rel="noreferrer">
+                                        Avenida Marquês de São Vicente, 230, 18° andar - São Paulo – SP, 01139-000
+                                    </a>
+                                </p>
+                                <p class="flex items-start -mx-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+
+                                    <a class="mx-2 text-white truncate w-[400px] dark:text-gray-400" href='https://www.google.com/maps/place/R.+Graco,+82+-+Gl%C3%B3ria,+Belo+Horizonte+-+MG,+30880-060/@-19.8990188,-44.0088855,17z/data=!3m1!4b1!4m5!3m4!1s0xa696ba914b460b:0xbcff9414dd660b40!8m2!3d-19.8990188!4d-44.0088855' target="_blank" rel="noreferrer">
                                         Rua  Gracco, 82 - Belo Horizonte - MG, 30880-060
                                     </a>
                                 </p>
-
                                 <p class="flex items-start -mx-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                     </svg>
 
-                                    <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">(31) 3665-1162</span>
+                                    <span class="mx-2 text-white truncate w-72 dark:text-gray-400">(11) 5200-0381</span>
                                 </p>
 
                                 <p class="flex items-start -mx-2">
@@ -74,12 +83,12 @@ const Email = () => {
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
 
-                                    <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">contato@databrand.com.br</span>
+                                    <span class="mx-2 text-white truncate w-72 dark:text-gray-400">contato@databrand.com.br</span>
                                 </p>
                             </div>
 
                             <div class="mt-6 w-80 md:mt-8">
-                                <h3 class="text-gray-600 dark:text-gray-300 ">Siga-nos nas redes sociais</h3>
+                                <h3 class="text-white dark:text-gray-300 ">Siga-nos nas redes sociais</h3>
 
                                 <div class="flex mt-4 -mx-1.5 ">
                                     <a class="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500" href="https://www.linkedin.com/company/databrand/" target="_blank" rel="noreferrer">
