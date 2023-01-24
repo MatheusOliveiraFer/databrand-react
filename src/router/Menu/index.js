@@ -26,7 +26,8 @@ export const Desktop = () => {
                     <div className="w-[60%] flex items-center justify-around">
                         <NavLink className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]" to="/">Home</NavLink>
                         <NavLink className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]" to="/databrand">A databrand</NavLink>
-                        <div className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]" onClick={popupMenu}>Soluções</div>
+                        <NavLink className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]" to="/Solucoes">Soluções</NavLink>
+                        <NavLink className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]" to="/Servicos">Serviços</NavLink>
                         <div className="font-medium text-[#134780] cursor-pointer hover:text-[#939598]" onClick={popupMenu}>Conteúdos</div>
                     </div>
                     <div className="w-[40%] flex items-center justify-end">

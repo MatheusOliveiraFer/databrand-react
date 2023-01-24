@@ -47,3 +47,9 @@ video {
   background-size: cover;
   background-position: center;
 }
+.bg-hynbrid {
+  background-image: url('./assets/img/hybridEdatabrand.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
