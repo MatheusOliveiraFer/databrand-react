@@ -3,8 +3,7 @@ import EFI from "../../assets/img/efiFiery.png";
 import CreativeEdge from "../../assets/img/CreativeEdge.png";
 import Enfocus from "../../assets/img/EnfocusBranco.png";
 import UltimateTechnoGraphics from "../../assets/img/UltimateTechnoGraphics.png";
-import Hybrid from "../../assets/img/hybrid/hybrid.png";
-import TiliaLabs from "../../assets/img/TiliaLabs.png";
+import Hybrid from "../../assets/img/hybrid/AuthorizedResellerBadge.png";
 import databrand from "../../assets/img/databrand.png";
 import { NavLink } from "react-router-dom";
 import Email from "../../components/Contact/contactEmail";
@@ -85,7 +84,7 @@ const Index = () => {
                     {/* <!-- box-2 --> */}
                     <div class="mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0">
                         <div class="w-sm">
-                            <img class="w-64" src={Hybrid} alt="Logo G7 Expert" />
+                            <div className="flex justify-center items-center h-[259px]"><img class="w-64" src={Hybrid} alt="Logo G7 Expert" /></div>
                             <div class="mt-4 text-green-600 text-center">
                                 <h1 class="text-xl font-bold text-[#134780]">HYBRID Software</h1>
                                 <p class="mt-4 text-gray-600 mb-10">É uma empresa de desenvolvimento de software focada em ferramentas...</p>
@@ -97,10 +96,10 @@ const Index = () => {
                     {/* <!-- box-3 --> */}
                     <div class="mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0">
                         <div class="w-sm">
-                            <img class="w-64" src={TiliaLabs} alt="Logo Creative Egde" />
+                            <div className="flex justify-center items-center h-[259px]"><h1 className="text-2xl font-bold text-[#134780]">EM BREVE...</h1></div>
                             <div class="mt-4 text-green-600 text-center">
-                                <h1 class="text-xl font-bold text-[#134780]">Tilia Labs</h1>
-                                <p class="mt-4 text-gray-600">É uma empresa de software que desenvolve Inteligência Artificial para estimativa...</p>
+                                <h1 class="text-xl font-bold text-[#134780]">Novidades</h1>
+                                <p class="mt-4 text-gray-600 h-[73px]"></p>
                                 <button class="mt-8 mb-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200">MAIS</button>
                             </div>
                         </div>
