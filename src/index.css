@@ -53,3 +53,9 @@ video {
   background-size: cover;
   background-position: center;
 }
+.bg-ultimate {
+  background-image: url('./assets/img/headerbg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

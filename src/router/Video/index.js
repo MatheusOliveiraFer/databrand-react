@@ -1,4 +1,4 @@
-import Background from "../../assets/img/background.jpeg";
+import Background from "../../assets/img/background.jpg";
 const Index = () => {
     return (
         <div className="w-full h-screen bg-slate-500">

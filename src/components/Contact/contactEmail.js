@@ -9,7 +9,7 @@ const Email = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        if(name === '' || email === '' || message === '') {
+        if (name === '' || email === '' || message === '') {
             Swal.fire({
                 icon: 'info',
                 title: 'Ainda tem campos a serem preenchidos!'
@@ -56,27 +56,17 @@ const Email = () => {
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
 
-                                    <a class="mx-2 text-white truncate w-[700px] dark:text-gray-400" href='https://www.google.com.br/maps/place/Av.+Marqu%C3%AAs+de+S%C3%A3o+Vicente,+230+-+18%C2%B0+andar+-+Barra+Funda,+S%C3%A3o+Paulo+-+SP,+01139-000/@-23.5216385,-46.6643495,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5807b66aab05:0x96223341794bc07a!8m2!3d-23.5216434!4d-46.6621608' target="_blank" rel="noreferrer">
-                                        Avenida Marquês de São Vicente, 230, 18° andar - São Paulo – SP, 01139-000
-                                    </a>
-                                </p>
-                                <p class="flex items-start -mx-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-
                                     <a class="mx-2 text-white truncate w-[400px] dark:text-gray-400" href='https://www.google.com/maps/place/R.+Graco,+82+-+Gl%C3%B3ria,+Belo+Horizonte+-+MG,+30880-060/@-19.8990188,-44.0088855,17z/data=!3m1!4b1!4m5!3m4!1s0xa696ba914b460b:0xbcff9414dd660b40!8m2!3d-19.8990188!4d-44.0088855' target="_blank" rel="noreferrer">
                                         Rua  Gracco, 82 - Belo Horizonte - MG, 30880-060
                                     </a>
                                 </p>
-                                <p class="flex items-start -mx-2">
+                                {/* <p class="flex items-start -mx-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                     </svg>
 
                                     <span class="mx-2 text-white truncate w-72 dark:text-gray-400">(11) 5200-0381</span>
-                                </p>
+                                </p> */}
 
                                 <p class="flex items-start -mx-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -113,7 +103,7 @@ const Email = () => {
 
                                     <a class="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500" href="https://www.youtube.com/channel/UCSDOHIJQx6SKLOdZuv_Lmcg" target="_blank" rel="noreferrer">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="32" fill="#FFFFFF" class="bi bi-youtube" viewBox="0 0 16 16">
-                                          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
                                         </svg>
                                     </a>
                                 </div>
@@ -141,7 +131,7 @@ const Email = () => {
                                         <textarea onChange={(e) => setMessage(e.target.value)} value={message} class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Sua mensagem..."></textarea>
                                     </div>
 
-                                    <button  value="Enviar" type="submit" class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                                    <button value="Enviar" type="submit" class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                         Enviar
                                     </button>
                                 </form>

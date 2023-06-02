@@ -75,8 +75,8 @@ const Index = () => {
                             <img class="w-64" src={UltimateTechnoGraphics} alt="Logo EFI" />
                             <div class="mt-4 text-[#134780] text-center">
                                 <h1 class="text-[19px] font-bold">Ultimate TechnoGraphics</h1>
-                                <p class="mt-4 text-gray-600">Inventou a imposição digital com o primeiro lançamento do Ultimate Impostrip®...</p>
-                                <button class="mt-8 mb-4 py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200">MAIS</button>
+                                <p class="mt-4 mb-10 text-gray-600">Inventou a imposição digital com o primeiro lançamento do Ultimate Impostrip®...</p>
+                                <NavLink className="py-2 px-14 rounded-full bg-[#134780] text-white tracking-widest hover:bg-[#134880dc] transition duration-200" to="/UltimateTechnoGraphics">MAIS</NavLink>
                             </div>
                         </div>
                     </div>
